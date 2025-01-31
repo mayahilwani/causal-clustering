@@ -3,7 +3,7 @@ from edge import Edge;
 from slope import Slope;
 from globe import Globe;
 from utils import *
-from dag import DAG;
+#from dag import DAG;
 from logger import Logger
 import numpy as np;
 import sys
@@ -28,7 +28,7 @@ class GlobeWrapper:
         self.slope_ = Slope();
         self.vars = np.zeros((5, 5));
         self.gt = np.zeros((5, 5));
-        self.M = max_int;
+        #self.M = max_int;
         self.log_path = "./logs/log_" + str(datetime.now(tz=None)).replace(' ', '_') + ".txt";
         self.log_flag = log_results;
         self.verbose = vrb;

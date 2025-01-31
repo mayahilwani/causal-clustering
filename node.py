@@ -24,7 +24,8 @@ class Node:
 		
 		source =np.hstack(dt);
 		target=child.GetData();
-		new_bits,coeffs = self.globe_.ComputeScore(source,target,rows,child.GetMinDiff(),k=np.array([1]));
+
+		new_bits,coeffs = self.globe_.OldComputeScore(source,target,rows,child.GetMinDiff(),k=np.array([1]));
 		return new_bits;
 	
 	def GetCurrentBits(self):
